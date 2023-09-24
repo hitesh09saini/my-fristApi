@@ -5,6 +5,7 @@ const port = 3000;
 
 let on = document.getElementById('on');
 
+document.addEventListener('DOMContentLoaded',()=>{
 app.use(cors());
 
 
@@ -21,4 +22,5 @@ app.listen(port, () => {
 
     on.innerHTML = `Server is running on port http://localhost:${port}`;
     // console.log(`Server is running on port http://localhost:${port}`);
+});
 });
